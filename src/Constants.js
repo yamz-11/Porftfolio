@@ -7,8 +7,18 @@ import PROJECT6 from "./Assets/Projects/project6.jpg";
 import PROJECT7 from "./Assets/Projects/project7.jpg";
 import PROJECT8 from "./Assets/Projects/project8.jpg";
 import PROJECT9 from "./Assets/Projects/project9.jpg";
+import PROJECT10 from "./Assets/Projects/project10.png";
 
 export const PROJECTS = [
+  {
+    image: PROJECT10,
+    name: "YamzStore",
+    technologyUsed: "Laravel, filament, livewire, Tailwind",
+    description: [
+      "Web Store Premium Apss"
+    ],    
+    url: "https://athallariq11.github.io/YamzStore.github.io/",
+  },
   {
     image: PROJECT4,
     name: "PinjamSimple",
