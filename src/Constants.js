@@ -6,6 +6,7 @@ import PROJECT5 from "./Assets/Projects/project5.png";
 import PROJECT6 from "./Assets/Projects/project6.jpg";
 import PROJECT7 from "./Assets/Projects/project7.jpg";
 import PROJECT8 from "./Assets/Projects/project8.jpg";
+import PROJECT9 from "./Assets/Projects/project9.jpg";
 
 export const PROJECTS = [
   {
@@ -65,6 +66,15 @@ export const PROJECTS = [
     technologyUsed: "Java SpringBoot",
     description: [
       "Assigment"
+    ],    
+    url: "",
+  },
+  {
+    image: PROJECT9,
+    name: "Weight Convert",
+    technologyUsed: "Java SpringBoot",
+    description: [
+      ""
     ],    
     url: "",
   },
