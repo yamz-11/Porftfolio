@@ -4,6 +4,8 @@ import PROJECT3 from "./Assets/Projects/project3.png";
 import PROJECT4 from "./Assets/Projects/project4.jpg";
 import PROJECT5 from "./Assets/Projects/project5.png";
 import PROJECT6 from "./Assets/Projects/project6.jpg";
+import PROJECT7 from "./Assets/Projects/project7.jpg";
+import PROJECT8 from "./Assets/Projects/project8.jpg";
 
 export const PROJECTS = [
   {
@@ -46,6 +48,24 @@ export const PROJECTS = [
     name: "SimpleCashier",
     technologyUsed: "C#, Windows Form",
     description: "Simple CRUD cashier application.",
+    url: "",
+  },
+  {
+    image: PROJECT8,
+    name: "Simple Resfull API",
+    technologyUsed: "Java SpringBoot",
+    description: [
+      ""
+    ],    
+    url: "",
+  },
+  {
+    image: PROJECT7,
+    name: "Toko Sayur",
+    technologyUsed: "Java SpringBoot",
+    description: [
+      "Assigment"
+    ],    
     url: "",
   },
   {
