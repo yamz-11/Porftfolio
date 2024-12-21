@@ -145,8 +145,8 @@ html {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
+    /* padding: 1rem 2rem !important; */
+    font-size: 1.2rem !important;
     background-color: #292b2c !important;
   }
   .navbar-nav .nav-item a::after {
