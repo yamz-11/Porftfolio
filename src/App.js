@@ -1,42 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-// import Resume from "./components/Resume/ResumeNew";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import ScrollToTop from "./components/ScrollToTop";
+// Lazy load components
+const Home = lazy(() => import("./components/Home/Home"));
+const About = lazy(() => import("./components/About/About"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
+    const timer = setTimeout(() => setIsLoading(false), 1200);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router>
-      {load ? (
-        <Preloader load={load} />
+      {isLoading ? (
+        <Preloader load={isLoading} />
       ) : (
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <div className={`App ${isLoading ? "no-scroll" : "scroll"}`}>
           <Navbar />
           <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
+          <Suspense fallback={<Preloader load={true} />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project" element={<Projects />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<div>404 - Page Not Found</div>} />
+            </Routes>
+          </Suspense>
           <Footer />
         </div>
       )}
