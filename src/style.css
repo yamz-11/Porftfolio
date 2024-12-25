@@ -22,16 +22,16 @@ html {
 }
 
 @media (max-width: 767px) {
-    #preloader {
-      position: fixed;
-      top: 30%;
-      left: 20%;
-      width: 100%;
-      height: 100%;
-      z-index: 999999;
-      background-color: #ffffff;
-      background-repeat: no-repeat;
-      background-position: center;
+  #preloader {
+    position: fixed;
+    top: 25%;
+    left: 45%;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -148,10 +148,12 @@ html {
     font-size: 1.2rem !important;
     background-color: #292b2c !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -212,10 +214,14 @@ html {
 /* --------- */
 
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -223,28 +229,38 @@ html {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -275,6 +291,7 @@ html {
 .heading-description {
   margin-left: 20px !important;
 }
+
 .heading-type {
   padding-left: 15px;
   text-align: "left";
@@ -299,6 +316,7 @@ html {
   color: #414141 !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #414141 !important;
@@ -310,6 +328,7 @@ html {
     font-weight: 600 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -434,7 +453,7 @@ html {
     text-align: center !important;
   }
 }
- 
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -461,6 +480,7 @@ html {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -521,10 +541,12 @@ html {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: #414141 !important;
   font-size: 2.3em !important;
@@ -676,9 +698,11 @@ html {
   height: 85%;
   width: 90%;
 }
+
 .project-title {
   font-weight: bold;
 }
+
 .profile-pic {
   border-radius: 50%;
   height: 70%;
@@ -702,7 +726,7 @@ html {
 }
 
 @media (max-width: 767px) {
-  .skill-tools-wrapper{
+  .skill-tools-wrapper {
     flex-direction: column;
   }
 }
