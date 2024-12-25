@@ -3,17 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-// import { ImBlog } from "react-icons/im";
 import {
   AiOutlineHome,
   AiOutlineUser,
   AiOutlineLaptop,
   AiOutlineProject,
 } from "react-icons/ai";
-
-// import { MdDeveloperMode } from "react-icons/md";
-
-// import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
