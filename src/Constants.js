@@ -11,19 +11,27 @@ import PROJECT10 from "./Assets/Projects/project10.png";
 import PROJECT11 from "./Assets/Projects/project11.png";
 import PROJECT12 from "./Assets/Projects/project12.png";
 import PROJECT13 from "./Assets/Projects/project13.png";
+import PROJECT14 from "./Assets/Projects/project14.png";
 
 export const PROJECTS = [
   {
+    image: PROJECT14,
+    name: "School Management Sistem",
+    technologyUsed: "Laravel, mysql",
+    description: [""],
+    url: "",
+  },
+  {
     image: PROJECT13,
     name: "YamzStore",
-    technologyUsed: "Laravel filament, Tailwind, mysql",
+    technologyUsed: "Laravel, mysql",
     description: ["Web Store Premium Apps"],
     url: "https://athallariq11.github.io/YamzStore.github.io/",
   },
   {
     image: PROJECT10,
     name: "Simple Website Finance Record",
-    technologyUsed: "Laravel Filament",
+    technologyUsed: "Laravel",
     description: [""],
     url: "",
   },
