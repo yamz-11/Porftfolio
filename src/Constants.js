@@ -19,7 +19,7 @@ export const PROJECTS = [
     name: "School Management Sistem",
     technologyUsed: "Laravel, mysql",
     description: [""],
-    url: "",
+    url: "https://github.com/yamz-11/SchManagementSytem",
   },
   {
     image: PROJECT13,
@@ -33,12 +33,12 @@ export const PROJECTS = [
     name: "Simple Website Finance Record",
     technologyUsed: "Laravel",
     description: [""],
-    url: "",
+    url: "https://github.com/yamz-11/YamzFinance",
   },
   {
     image: PROJECT4,
     name: "PinjamSimple",
-    technologyUsed: "Laravel,Tailwind, Mysql",
+    technologyUsed: "Laravel, Tailwind, Mysql",
     description: [
       "PinjamSimple is a simple book borrowing website consisting of several features: Login, Register, Books, Category, Borrowing, members, mailtrap etc. ",
       "There are admin and user roles: ",
